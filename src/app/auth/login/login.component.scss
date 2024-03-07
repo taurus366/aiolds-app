@@ -1,0 +1,68 @@
+ion-content.login-container {
+    --background: #8BA6F7; /* fallback for old browsers */
+    --background: -webkit-linear-gradient(#8BA6F7, #8AA2F3, #7F93D5, #717DAD); /* Chrome 10-25, Safari 5.1-6 */
+  --background: linear-gradient(to bottom, #8BA6F7, #8AA2F3, #7F93D5, #717DAD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+}
+
+  .username-field, .password-field {
+    --ion-item-background:#015f0100;
+    --ion-item-color: white;
+   --border-color: white;
+    --ion-item-highlight-color-focused: white;
+    :host(.item-has-focus) .item-native {
+      caret-color: white;
+    }
+    --highlight-color-focused: white;
+    --highlight-color: white;
+
+    & > ion-label {
+      color: white !important;
+    }
+    & > ion-icon {
+      color: white;
+    }
+  }
+
+  .login-button-container {
+    text-align: center;
+  }
+
+  .login-button {
+    width: 15rem;
+    margin-top: 20px;
+  }
+
+  .login-img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .login-img {
+    filter: brightness(9999) invert(0.5) sepia(1) hue-rotate(192deg) contrast(1019%);
+    object-fit: cover;
+    margin-bottom: 30px;
+    width: 30rem;
+  }
+
+  .form-container {
+    display: flex;
+    //justify-content: center;
+    //height: 78vh;
+    flex-direction: column;
+    //align-items: center;
+  }
+
+  .login-section {
+    margin-top: 35%;
+  }
+
+@media screen and (orientation: landscape) {
+  .login-section {
+    margin-top: 0; /* Remove margin-top in landscape orientation */
+  }
+}
+
+
+
