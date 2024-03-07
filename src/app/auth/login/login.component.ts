@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 import {addIcons} from "ionicons";
 import {personOutline, lockClosedOutline} from "ionicons/icons";
+import {NgForm} from "@angular/forms";
 
 @Component({
   selector: 'app-login',
@@ -13,8 +14,15 @@ import {personOutline, lockClosedOutline} from "ionicons/icons";
 })
 export class LoginComponent   {
 
+  isUsernameInCorrect: boolean = false;
+  isPasswordInCorrect: boolean = false;
+
   constructor() {
     addIcons({personOutline, lockClosedOutline});
+  }
+
+  login(form: NgForm): void {
+
   }
 
 
